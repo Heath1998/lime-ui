@@ -60,17 +60,10 @@
     "deploy:build": "npm run docs:build && npm run deploy",
     "test": "karma start test/karma.config.js --single-run"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/arronKler/lime-ui.git"
-  },
   "keywords": [],
-  "author": "ArronKler <arronkler@gmail.com>",
+  "author": "asdsadsad",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/arronKler/lime-ui/issues"
-  },
-  "homepage": "https://github.com/arronKler/lime-ui#readme",
+
   "peerDependencies": {
     "vue": "^2.5.2"
   },
