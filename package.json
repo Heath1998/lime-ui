@@ -1,5 +1,5 @@
 {
-  "name": "fan-ui",
+  "name": "fan-test-study-ui",
   "version": "1.0.0",
   "description": "another light weight vue.js component library",
   "main": "lib/lime-ui.min.js",
