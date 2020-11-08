@@ -5,7 +5,7 @@ const path = require('path');
 const webpack = require('webpack');
 const pkg = require('../package.json');
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
-
+ 
 function resolve(dir) {
   return path.join(__dirname, '..', dir);
 }
@@ -29,7 +29,7 @@ module.exports = {
               },
             ],
             less: [
-              'vue-style-loader',
+              'vue-style-loader', //打包成额外的文件
               {
                 loader: 'css-loader',
                 options: {
@@ -135,10 +135,10 @@ module.exports = {
     }
   },
   plugins: [
-    new webpack.optimize.ModuleConcatenationPlugin(),
-    new webpack.DefinePlugin({
+    new webpack.optimize.ModuleConcatenationPlugin(),   // 作用域提升,提升速度
+    new webpack.DefinePlugin({          // 编译阶段自动根据Node_env自动切换配置文件
       'process.env.VERSION': `'${pkg.version}'`
     }),
-    new VueLoaderPlugin()
+    new VueLoaderPlugin()   // 将其它匹配规则应用到.vue文件中
   ]
 };

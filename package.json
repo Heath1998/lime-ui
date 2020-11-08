@@ -1,6 +1,6 @@
 {
   "name": "fan-test-study-ui",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "another light weight vue.js component library",
   "main": "lib/lime-ui.min.js",
   "dependencies": {
